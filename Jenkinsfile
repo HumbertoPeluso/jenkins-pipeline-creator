@@ -1,4 +1,10 @@
-node {
-    sh "#!/bin/ksh \n" +
-       "echo \"Hello world!\""
+pipeline {
+    agent any
+    stages {
+        stage('Run Script') {
+            steps {
+                sh 'bashscript.sh'
+            }
+        }
+    }
 }
