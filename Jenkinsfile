@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run Script') {
             steps {
-                sh '/bashscript.sh'
+                sh '/var/lib/jenkins/workspace/jenkins-pipeline-creator_main/bashscript.sh'
             }
         }
     }
